@@ -12,7 +12,7 @@ export interface RequestConfig extends AxiosRequestConfig{
 
 const AUTHORIZATION = "Basic MDk4MjIyMjIyMjI6U2FuYTEyMzQ1Njc4";
 
-function AuthorizationMiddleware (token : string, onFailure : (err : Error | any) => void, callRefresh = false){
+function AuthorizationMiddleware (_token : string, _onFailure : (err : Error | any) => void, _callRefresh = false){
   // Do Authorization Stuff
   return Promise.resolve(AUTHORIZATION)
 }

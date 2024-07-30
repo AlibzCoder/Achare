@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { useAppDispatch } from "../store";
 import Map from "./Map";
 import Button from "./Atoms/Buttons/Button";
 import { ButtonTypes } from "./Atoms/types";
@@ -16,13 +15,13 @@ const AddAddress = () => {
 
   const [page, setPage] = useState<number>(0);
   const navigate = useNavigate();
-  const [isFormValid, setIsFormValid] = useState<boolean>(false);
+  const [_isFormValid, setIsFormValid] = useState<boolean>(false);
   const [formData, setFormData] = useState<object | any>({});
   const [latlng, setLatLng] = useState<LatLngLiteral>({ lat: 0, lng: 0 });
   const [isLoading, setIsLoading] = useState(false);
 
   function HandleFormSubmit(
-    e: Event | any,
+    _e: Event | any,
     isValid: boolean,
     data: object | any
   ) {

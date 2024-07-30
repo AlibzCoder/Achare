@@ -40,7 +40,7 @@ const FormInput = (props : InputProps, outerRef : ForwardedRef<any>) => {
         }
     }, [autoValidate, value])
 
-    function ClearValue(e : Event | any) {
+    function ClearValue(_e : Event | any) {
         if(IsDomElement(ref.current) && ref.current instanceof HTMLInputElement) ref.current.value = ""
         setValue("")
         OnChange({target : ref.current});

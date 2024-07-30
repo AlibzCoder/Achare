@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { CreateApiInstance } from "./Api";
 import { BASE_URL } from "./consts";
 import { Bounce, toast } from "react-toastify";

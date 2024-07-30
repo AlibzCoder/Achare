@@ -8,7 +8,7 @@ import { FixedSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import Loader from "./Atoms/Loader";
 
-const Addresses = (props: any) => {
+const Addresses = () => {
   const dispatch = useAppDispatch();
   const Addresses: Array<Address> = useAppSelector(addressesSelector);
   const [isLoading, setIsLoading] = useState(false);

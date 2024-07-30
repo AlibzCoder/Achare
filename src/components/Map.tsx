@@ -17,7 +17,7 @@ const CatchContext = (props: { onchange: (latlng: LatLngLiteral) => void }) => {
       map.flyTo(e.latlng, map.getZoom());
       if (onchange) onchange(e.latlng);
     },
-    move(e) {
+    move() {
       if (onchange) onchange(map.getCenter());
     },
   });
